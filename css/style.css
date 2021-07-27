@@ -1,6 +1,7 @@
 /*base.html*/
 
-#signupbtn{
-    margin-right:10px;
-    padding-right: 50px;
+#signupbtn {
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
 }

@@ -1,0 +1,10 @@
+{%  extends 'base.html' %}
+
+{% block title %} Blog by {{blog.writer}} {% endblock title %}
+
+{% block body %}
+<h1>{{blog.title}}<h1>
+<p>{{blog.content}}</p>
+<img src="/media/{{form}}" alt="" style="height:180px;width:230px;">
+
+{% endblock body %}

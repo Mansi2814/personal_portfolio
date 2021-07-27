@@ -1,0 +1,20 @@
+{%  extends 'base.html' %}
+
+{% block title %} Email Verification {% endblock title %}
+
+{% block body %}
+
+    <main class="form-signin">
+        <form action="" method = "post">
+        {% csrf_token %} 
+            <h1 class="h3 mb-3 fw-normal">Email Verification</h1>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="otp_received" placeholder="OTP sent to Email Id" name="otp_received" required>
+                <label for="floatingInput">Enter the OTP</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">
+                Verify
+            </button>
+        </form>
+    </main>
+{% endblock body %}
